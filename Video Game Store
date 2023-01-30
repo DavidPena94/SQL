@@ -1,0 +1,19 @@
+CREATE TABLE Videogames (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER, genre TEXT, price INTEGER);
+INSERT INTO Videogames VALUES(1, "God Of War", 57, 2, "ActionLiteRPG", 20);
+INSERT INTO Videogames VALUES(2, "Madden 23", 30, 5, "Sportsim", 60 );
+INSERT INTO Videogames VALUES(3, "TLOU", 3, 1, "Horrorsurvial", 20 );
+INSERT INTO Videogames VALUES(4, "TLOU2", 33, 1, "Horrorsurvial", 45 );
+INSERT INTO Videogames VALUES(5, "Mech Warriors 5", 10, 8, "Mech", 20 );
+INSERT INTO Videogames VALUES(6, "Hades", 22, 4, "Rougelite", 20 );
+INSERT INTO Videogames VALUES(7, "Deep Rock Galactic", 11, 3, "Co-op", 20 );
+INSERT INTO Videogames VALUES(8, "Astroneer", 2, 3, "Co-op", 15 );
+INSERT INTO Videogames VALUES(9, "Pokemon Arceus", 32, 7, "Pokemon", 50 );
+INSERT INTO Videogames VALUES(10, "Uncharted", 9, 6, "Single Player", 10 );
+INSERT INTO Videogames VALUES(11, "Uncharted Collection", 12, 6,"Single Player", 45 );
+INSERT INTO Videogames VALUES(12, "It Takes Two", 55, 3, " Co-op", 45 );
+INSERT INTO Videogames VALUES(13, "Sifu", 15, 6, "Single Player", 45 );
+INSERT INTO Videogames VALUES(14, "Pokemon Scarlet", 60, 7, "Pokemon", 60 );
+INSERT INTO Videogames VALUES(15, "Pokemon Violet", 61, 7, "Pokemon", 60 );
+
+SELECT * FROM Videogames ORDER BY price;
+SELECT SUM(quantity) FROM Videogames;
